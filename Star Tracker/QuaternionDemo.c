@@ -27,7 +27,7 @@ int main () {
     
     output = quaternionFromAxis(currentAxis, rotation);
     
-    printf("%lf rotation around (%lf, %lf, %lf) = (%lf, %lf, %lf, %lf)", rotation, currentAxis.x, currentAxis.y, currentAxis.z, output.w, output.x, output.y, output.z);
+    printf("%lf degree rotation around (%lf, %lf, %lf) = (%lf, %lf, %lf, %lf)", rotation, currentAxis.x, currentAxis.y, currentAxis.z, output.w, output.x, output.y, output.z);
     
     return 0;
 }
