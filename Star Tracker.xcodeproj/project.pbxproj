@@ -11,6 +11,7 @@
 		F4E8B0D51C433D2400D1EA3F /* QuaternionDemo.c in Sources */ = {isa = PBXBuildFile; fileRef = F4E8B0D41C433D2400D1EA3F /* QuaternionDemo.c */; };
 		F4E8B0D91C433DA600D1EA3F /* Arithmetic.c in Sources */ = {isa = PBXBuildFile; fileRef = F4E8B0D61C433DA600D1EA3F /* Arithmetic.c */; };
 		F4E8B0DC1C433DF700D1EA3F /* StarMatching.c in Sources */ = {isa = PBXBuildFile; fileRef = F4E8B0DA1C433DF700D1EA3F /* StarMatching.c */; };
+		F4E8B0F11C43F1DC00D1EA3F /* Readme.md in Sources */ = {isa = PBXBuildFile; fileRef = F4E8B0F01C43F1DC00D1EA3F /* Readme.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -46,6 +47,7 @@
 		F4E8B0D81C433DA600D1EA3F /* Structures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Structures.h; path = lib/Core/Structures.h; sourceTree = "<group>"; };
 		F4E8B0DA1C433DF700D1EA3F /* StarMatching.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = StarMatching.c; path = lib/StarExtraction/StarMatching.c; sourceTree = "<group>"; };
 		F4E8B0DB1C433DF700D1EA3F /* StarMatching.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StarMatching.h; path = lib/StarExtraction/StarMatching.h; sourceTree = "<group>"; };
+		F4E8B0F01C43F1DC00D1EA3F /* Readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 				F4E8B0A51C43069700D1EA3F /* lib */,
 				F4E8B0941C42DDD100D1EA3F /* main.c */,
 				F4E8B0D41C433D2400D1EA3F /* QuaternionDemo.c */,
+				F4E8B0F01C43F1DC00D1EA3F /* Readme.md */,
 			);
 			path = "Star Tracker";
 			sourceTree = "<group>";
@@ -213,6 +216,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4E8B0F11C43F1DC00D1EA3F /* Readme.md in Sources */,
 				F4E8B0DC1C433DF700D1EA3F /* StarMatching.c in Sources */,
 				F4E8B0D51C433D2400D1EA3F /* QuaternionDemo.c in Sources */,
 				F4E8B0951C42DDD100D1EA3F /* main.c in Sources */,
