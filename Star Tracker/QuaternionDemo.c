@@ -25,7 +25,7 @@ int main () {
     printf("Enter the angle of rotation in degrees");
     scanf("%lf", &rotation);
     
-    output = quaternionFromAxis(currentAxis, 90);
+    output = quaternionFromAxis(currentAxis, rotation);
     
     printf("%lf rotation around (%lf, %lf, %lf) = (%lf, %lf, %lf, %lf)", rotation, currentAxis.x, currentAxis.y, currentAxis.z, output.w, output.x, output.y, output.z);
     
