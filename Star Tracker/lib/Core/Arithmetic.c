@@ -48,7 +48,7 @@ quaternion quaternionFromAxis(const axis axis, double theta){
     // so we'll need to convert theta to radians.
     theta = degreeToRadian(theta);
     
-    // We can build out quaternion
+    // We can build our quaternion
     output.w = cos(theta/2);
     output.x = axis.x * sin(theta/2);
     output.y = axis.y * sin(theta/2);
