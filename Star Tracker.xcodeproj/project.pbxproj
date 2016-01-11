@@ -8,8 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		F4E8B0951C42DDD100D1EA3F /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = F4E8B0941C42DDD100D1EA3F /* main.c */; };
-		F4E8B09E1C42F60000D1EA3F /* Arithmetic.c in Sources */ = {isa = PBXBuildFile; fileRef = F4E8B09D1C42F60000D1EA3F /* Arithmetic.c */; };
-		F4E8B0A11C42FDD800D1EA3F /* StarMatching.c in Sources */ = {isa = PBXBuildFile; fileRef = F4E8B09F1C42FDD800D1EA3F /* StarMatching.c */; };
+		F4E8B0D51C433D2400D1EA3F /* QuaternionDemo.c in Sources */ = {isa = PBXBuildFile; fileRef = F4E8B0D41C433D2400D1EA3F /* QuaternionDemo.c */; };
+		F4E8B0D91C433DA600D1EA3F /* Arithmetic.c in Sources */ = {isa = PBXBuildFile; fileRef = F4E8B0D61C433DA600D1EA3F /* Arithmetic.c */; };
+		F4E8B0DC1C433DF700D1EA3F /* StarMatching.c in Sources */ = {isa = PBXBuildFile; fileRef = F4E8B0DA1C433DF700D1EA3F /* StarMatching.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,11 +28,6 @@
 /* Begin PBXFileReference section */
 		F4E8B0911C42DDD100D1EA3F /* Star Tracker */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Star Tracker"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4E8B0941C42DDD100D1EA3F /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
-		F4E8B09B1C42F53F00D1EA3F /* Structures.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Structures.h; sourceTree = "<group>"; };
-		F4E8B09C1C42F58100D1EA3F /* Arithmetic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Arithmetic.h; sourceTree = "<group>"; };
-		F4E8B09D1C42F60000D1EA3F /* Arithmetic.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Arithmetic.c; sourceTree = "<group>"; };
-		F4E8B09F1C42FDD800D1EA3F /* StarMatching.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = StarMatching.c; sourceTree = "<group>"; };
-		F4E8B0A01C42FDD800D1EA3F /* StarMatching.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StarMatching.h; sourceTree = "<group>"; };
 		F4E8B0C21C430BAD00D1EA3F /* aclocal.m4 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = aclocal.m4; path = lib/imlib2/aclocal.m4; sourceTree = "<group>"; };
 		F4E8B0C31C430BAD00D1EA3F /* AUTHORS */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = AUTHORS; path = lib/imlib2/AUTHORS; sourceTree = "<group>"; };
 		F4E8B0C41C430BAD00D1EA3F /* ChangeLog */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = ChangeLog; path = lib/imlib2/ChangeLog; sourceTree = "<group>"; };
@@ -44,6 +40,12 @@
 		F4E8B0CB1C430BAD00D1EA3F /* Makefile.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Makefile.in; path = lib/imlib2/Makefile.in; sourceTree = "<group>"; };
 		F4E8B0CC1C430BAD00D1EA3F /* data.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = data.xcodeproj; path = lib/imlib2/data/data.xcodeproj; sourceTree = "<group>"; };
 		F4E8B0CF1C430BAD00D1EA3F /* doc.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = doc.xcodeproj; path = lib/imlib2/doc/doc.xcodeproj; sourceTree = "<group>"; };
+		F4E8B0D41C433D2400D1EA3F /* QuaternionDemo.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = QuaternionDemo.c; sourceTree = "<group>"; };
+		F4E8B0D61C433DA600D1EA3F /* Arithmetic.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = Arithmetic.c; path = lib/Core/Arithmetic.c; sourceTree = "<group>"; };
+		F4E8B0D71C433DA600D1EA3F /* Arithmetic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Arithmetic.h; path = lib/Core/Arithmetic.h; sourceTree = "<group>"; };
+		F4E8B0D81C433DA600D1EA3F /* Structures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Structures.h; path = lib/Core/Structures.h; sourceTree = "<group>"; };
+		F4E8B0DA1C433DF700D1EA3F /* StarMatching.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = StarMatching.c; path = lib/StarExtraction/StarMatching.c; sourceTree = "<group>"; };
+		F4E8B0DB1C433DF700D1EA3F /* StarMatching.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StarMatching.h; path = lib/StarExtraction/StarMatching.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 			children = (
 				F4E8B0A51C43069700D1EA3F /* lib */,
 				F4E8B0941C42DDD100D1EA3F /* main.c */,
+				F4E8B0D41C433D2400D1EA3F /* QuaternionDemo.c */,
 			);
 			path = "Star Tracker";
 			sourceTree = "<group>";
@@ -85,8 +88,8 @@
 		F4E8B0A21C4305F900D1EA3F /* StarExtraction */ = {
 			isa = PBXGroup;
 			children = (
-				F4E8B09F1C42FDD800D1EA3F /* StarMatching.c */,
-				F4E8B0A01C42FDD800D1EA3F /* StarMatching.h */,
+				F4E8B0DA1C433DF700D1EA3F /* StarMatching.c */,
+				F4E8B0DB1C433DF700D1EA3F /* StarMatching.h */,
 			);
 			name = StarExtraction;
 			sourceTree = "<group>";
@@ -94,9 +97,9 @@
 		F4E8B0A31C43063600D1EA3F /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				F4E8B09C1C42F58100D1EA3F /* Arithmetic.h */,
-				F4E8B09D1C42F60000D1EA3F /* Arithmetic.c */,
-				F4E8B09B1C42F53F00D1EA3F /* Structures.h */,
+				F4E8B0D61C433DA600D1EA3F /* Arithmetic.c */,
+				F4E8B0D71C433DA600D1EA3F /* Arithmetic.h */,
+				F4E8B0D81C433DA600D1EA3F /* Structures.h */,
 			);
 			name = Core;
 			sourceTree = "<group>";
@@ -210,9 +213,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4E8B0DC1C433DF700D1EA3F /* StarMatching.c in Sources */,
+				F4E8B0D51C433D2400D1EA3F /* QuaternionDemo.c in Sources */,
 				F4E8B0951C42DDD100D1EA3F /* main.c in Sources */,
-				F4E8B09E1C42F60000D1EA3F /* Arithmetic.c in Sources */,
-				F4E8B0A11C42FDD800D1EA3F /* StarMatching.c in Sources */,
+				F4E8B0D91C433DA600D1EA3F /* Arithmetic.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

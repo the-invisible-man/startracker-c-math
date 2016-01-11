@@ -11,6 +11,7 @@
 #include "Arithmetic.h"
 #include <math.h>
 
+// Area & Polar Moment Method
 struct apmm_result apmm(point p1, point p2, point p3){
     double a, b, c, s;
     struct apmm_result result;
@@ -26,6 +27,7 @@ struct apmm_result apmm(point p1, point p2, point p3){
     return result;
 }
 
+// Planar Angle Method
 struct pam_result pam(point p1, point p2, point p3){
     double a, b, c;
     struct pam_result result;
@@ -41,6 +43,7 @@ struct pam_result pam(point p1, point p2, point p3){
     return result;
 }
 
+// Vector Angle Method
 struct vam_result vam(point p1, point p2, point p3) {
     struct vam_result result;
     
