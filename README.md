@@ -1,6 +1,6 @@
 # Star Tracker C Math Libraries
 
-This repository has some early versions of the math functions for a past nanostallite project. The repo comes with trig functions, as well as a quaternion calculator for avoiding gimbal lock on an object moving in Euclidean space. It contains a Quaternion object with (w, x, y, z). The project includes a star catalog in a csv file, as well as a sql to create the table that holds the csv data.
+This repository has some early versions of the math functions for a past nanostallite project. The repo comes with trig functions, as well as a quaternion calculator for preventing gimbal lock. It contains a Quaternion object with (w, x, y, z). The project includes a star catalog in a csv file, as well as a sql to create the table that holds the csv data.
 
 The database engine planned for this is mysqlite.
 
@@ -12,7 +12,7 @@ Designing Star Trackers to Meet Micro-satellite Requirements, KARA M. HUFFMAN (2
 
 ## Algorithm
 
-The algorithm aims to receive combinations of 3 stars from a specific frame reference point in two-dimensional space and transform into 3-dimmensinal space, determine its properties, and compare to our star catalog. The properties of each triangle is extracted through 3 different strategies.
+The algorithm aims to receive combinations of 3 stars from a specific reference frame  point in two-dimensional space and transform into 3-dimmensinal space, determine its properties, and compare to our star catalog. The properties of each triangle is extracted through 3 different strategies.
 
 * Area and Polar Moment
 * Planar Angle
