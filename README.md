@@ -6,13 +6,13 @@ The database engine planned for this is mysqlite.
 
 The implementations in this repository are based on the following theses:
 
-Performance Analysis of a Fixed Point Star Tracker Algorithm for Use Onboard a Picosatellite , Kenneth Daniel Diaz (2006)
+* Performance Analysis of a Fixed Point Star Tracker Algorithm for Use Onboard a Picosatellite, Kenneth Daniel Diaz (2006)
 
-Designing Star Trackers to Meet Micro-satellite Requirements, KARA M. HUFFMAN (2006)
+* Designing Star Trackers to Meet Micro-satellite Requirements, Kara M. Huffman (2006)
 
 ## Algorithm
 
-The algorithm aims to receive combinations of 3 stars from a specific reference frame  point in two-dimensional space and transform into 3-dimmensinal space, determine its properties, and compare to our star catalog. The properties of each triangle is extracted through 3 different strategies.
+The algorithm aims to receive combinations of 3 stars from a specific reference frame in two-dimensional space and transform into 3-dimmensinal space, determine its properties, and try to find a match in the star catalog. The properties of each triangle is extracted through 3 different strategies.
 
 * Area and Polar Moment
 * Planar Angle
@@ -20,7 +20,7 @@ The algorithm aims to receive combinations of 3 stars from a specific reference 
 
 Our database needs to be prepared beforehand, this requires calculating all properties of our dataset. The main function demonstrates the mathematical function for using all three strategies.
 
-The stars that we choose to calculate are exclusive to their magnitude. The native appraoch to this problem would be to assume that any object in the sky is a star. This is not the case as you can have space dust touching the lens. For this we pick stars with a magnitude of at least 3.0. The magnitude of a star is its brightness, the lower the magnitude is the brighter the star is. For instance -5.0 would be brighter than 3.0. The brighter the star, the better chance of a match that we'll find in our dataset.
+The stars that we choose to calculate are exclusive to their magnitude. The naive appraoch to this problem would be to assume that any object in the sky is a star. This is not the case as you can have space dust touching the lens. For this we pick stars with a magnitude of at least 3.0. The magnitude of a star is its brightness, the lower the magnitude is the brighter the star is. For instance -5.0 would be brighter than 3.0. The brighter the star, the better chance of a match that we'll find in our dataset.
 
 ## Star Extractor
 
