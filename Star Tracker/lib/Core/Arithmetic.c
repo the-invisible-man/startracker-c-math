@@ -33,15 +33,15 @@ point subtractPoints(struct vector v1, struct vector v2) {
 }
 
 double degreeToRadian(double number) {
-    return number / 360 * (float)M_PI * 2;
+    return number / 360 * (double)M_PI * 2;
 }
 
 double radianToDegree(double radian) {
-    return radian * (180 * (float)M_PI);
+    return radian * (180 * (double)M_PI);
 }
 
 // Returns a quaternion given the axis (x, y, z) and the angle of rotation theta in degrees.
-quaternion quaternionFromAxis(const axis axis, double theta){
+quaternion quaternionFromAxis(const axis axis, double theta) {
     quaternion output;
     
     // The arcosine function in the C library accepts radians
@@ -49,7 +49,7 @@ quaternion quaternionFromAxis(const axis axis, double theta){
     theta = degreeToRadian(theta);
     
     // We can build our quaternion
-    output.w = cos(theta/2);
+    output.w = acos(theta/2);
     output.x = axis.x * sin(theta/2);
     output.y = axis.y * sin(theta/2);
     output.z = axis.z * sin(theta/2);

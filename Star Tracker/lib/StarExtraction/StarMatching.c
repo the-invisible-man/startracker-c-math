@@ -29,20 +29,20 @@ struct apmm_result apmm(point p1, point p2, point p3){
 
 // Planar Angle Method
 struct pam_result pam(point p1, point p2, point p3){
-    double a, b, c, radian_1, radian_2, radian_3;
+    double a, b, c, theta1, theta2, theta3;
     struct pam_result result;
     
     a = norm(subtractPoints(p1, p2));
     b = norm(subtractPoints(p2, p3));
     c = norm(subtractPoints(p1, p3));
     
-    radian_1 = degreeToRadian((pow(a, 2) - pow(c, 2) - pow(b, 2)) / (-2 * c * b));
-    radian_2 = degreeToRadian((pow(b, 2) - pow(a, 2) - pow(c, 2)) / (-2 * a * c));
-    radian_3 = degreeToRadian((pow(c, 2) - pow(a, 2) - pow(b, 2)) / (-2 * a * b));
+    theta1 = (pow(a, 2) - pow(c, 2) - pow(b, 2)) / (-2 * c * b);
+    theta2 = (pow(b, 2) - pow(a, 2) - pow(c, 2)) / (-2 * a * c);
+    theta3 = (pow(c, 2) - pow(a, 2) - pow(b, 2)) / (-2 * a * b);
     
-    result.theta1 = acos(radian_1);
-    result.theta2 = acos(radian_2);
-    result.theta3 = acos(radian_3);
+    result.theta1 = radianToDegree(acos(theta1));
+    result.theta2 = radianToDegree(acos(theta2));
+    result.theta3 = radianToDegree(acos(theta3));
     
     return result;
 }

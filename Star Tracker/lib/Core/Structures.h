@@ -1,5 +1,5 @@
 //
-//  Header.h
+//  Structures.h
 //  Star Tracker
 //
 //  Created by Carlos Granados on 1/10/16.
