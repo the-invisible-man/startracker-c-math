@@ -1,6 +1,6 @@
 # Star Tracker C Math Libraries
 
-This repository has some early versions/proof concepts of the math functions for a past nanostallite project. The repo comes with trig functions, as well as a quaternion calculator. The quaternion calc returns a quaternion given an axis (x, y, z) and degree of rotation, in practice this is used to tackle the [gimbal lock problem](https://www.youtube.com/watch?v=zc8b2Jo7mno). It contains a Quaternion object with (w, x, y, z). The project includes a star catalog in a csv file, as well as a sql to create the table that holds the csv data.
+This repository has some early versions/proof concepts of the math functions for a past nanostallite project. The repo comes with trig functions, as well as a quaternion calculator. The quaternion calc returns a quaternion given an axis (x, y, z) and degree of rotation, in practice this is used to prevent [gimbal lock](https://en.wikipedia.org/wiki/Gimbal_lock). It contains a Quaternion object with (w, x, y, z). The project includes a star catalog in a csv file, as well as a sql to create the table that holds the csv data.
 
 The database engine planned for this is mysqlite.
 
